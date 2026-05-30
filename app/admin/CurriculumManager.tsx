@@ -325,7 +325,7 @@ export default function CurriculumManager({
             setLessons([]);
             cancelEditLesson();
           }}
-          className="w-full rounded-lg border p-3"
+          className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
           required
         >
           <option value="">اختر الدورة</option>
@@ -344,7 +344,7 @@ export default function CurriculumManager({
           value={moduleTitle}
           onChange={(e) => setModuleTitle(e.target.value)}
           placeholder="اسم القسم"
-          className="w-full rounded-lg border p-3"
+          className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
           required
         />
 
@@ -353,7 +353,7 @@ export default function CurriculumManager({
           value={moduleOrder}
           onChange={(e) => setModuleOrder(Number(e.target.value))}
           placeholder="ترتيب القسم"
-          className="w-full rounded-lg border p-3"
+          className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
         />
 
         <button
@@ -384,7 +384,7 @@ export default function CurriculumManager({
             onChange={(e) =>
               setEditModuleTitle(e.target.value)
             }
-            className="w-full rounded-lg border p-3"
+            className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
             placeholder="اسم القسم"
           />
 
@@ -394,7 +394,7 @@ export default function CurriculumManager({
             onChange={(e) =>
               setEditModuleOrder(Number(e.target.value))
             }
-            className="w-full rounded-lg border p-3"
+            className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
             placeholder="ترتيب القسم"
           />
 
@@ -461,7 +461,7 @@ export default function CurriculumManager({
             setSelectedModuleId(e.target.value);
             cancelEditLesson();
           }}
-          className="w-full rounded-lg border p-3"
+          className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
           required
         >
           <option value="">اختر القسم</option>
@@ -476,7 +476,7 @@ export default function CurriculumManager({
           value={lessonTitle}
           onChange={(e) => setLessonTitle(e.target.value)}
           placeholder="عنوان الدرس"
-          className="w-full rounded-lg border p-3"
+          className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
           required
         />
 
@@ -484,7 +484,7 @@ export default function CurriculumManager({
           value={lessonDuration}
           onChange={(e) => setLessonDuration(e.target.value)}
           placeholder="مدة الدرس مثال: 10 دقائق"
-          className="w-full rounded-lg border p-3"
+          className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
         />
 
         <input
@@ -492,14 +492,14 @@ export default function CurriculumManager({
           value={lessonOrder}
           onChange={(e) => setLessonOrder(Number(e.target.value))}
           placeholder="ترتيب الدرس"
-          className="w-full rounded-lg border p-3"
+          className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
         />
 
         <input
           value={bunnyVideoId}
           onChange={(e) => setBunnyVideoId(e.target.value)}
           placeholder="Video URL لاحقًا"
-          className="w-full rounded-lg border p-3"
+          className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
         />
 
         <label className="flex items-center gap-2">
@@ -537,14 +537,14 @@ export default function CurriculumManager({
                 <input
                   value={editTitle}
                   onChange={(e) => setEditTitle(e.target.value)}
-                  className="w-full rounded-lg border p-3"
+                  className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
                   placeholder="عنوان الدرس"
                 />
 
                 <input
                   value={editDuration}
                   onChange={(e) => setEditDuration(e.target.value)}
-                  className="w-full rounded-lg border p-3"
+                  className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
                   placeholder="مدة الدرس"
                 />
 
@@ -552,14 +552,14 @@ export default function CurriculumManager({
                   type="number"
                   value={editOrder}
                   onChange={(e) => setEditOrder(Number(e.target.value))}
-                  className="w-full rounded-lg border p-3"
+                  className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
                   placeholder="ترتيب الدرس"
                 />
 
                 <input
                   value={editBunnyVideoId}
                   onChange={(e) => setEditBunnyVideoId(e.target.value)}
-                  className="w-full rounded-lg border p-3"
+                  className="w-full rounded-lg border border-gray-300 bg-white p-3 text-black placeholder:text-gray-500"
                   placeholder="Video URL"
                 />
 
