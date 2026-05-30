@@ -312,7 +312,7 @@ export default function CurriculumManager({
 
   return (
     <div className="mt-10 space-y-8 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-      <h2 className="text-2xl font-bold text-gray-900">إدارة محتوى الدورات</h2>
+      <h2 className="text-2xl font-bold text-black">إدارة محتوى الدورات</h2>
 
       <div className="space-y-3">
         <label className="font-semibold">اختر الدورة</label>
@@ -338,7 +338,7 @@ export default function CurriculumManager({
       </div>
 
       <form onSubmit={addModule} className="space-y-4 rounded-xl border p-4">
-        <h3 className="text-xl font-semibold">إضافة قسم Module</h3>
+        <h3 className="text-xl font-semibold text-black">إضافة قسم Module</h3>
 
         <input
           value={moduleTitle}
@@ -364,7 +364,7 @@ export default function CurriculumManager({
         </button>
       </form>
 <div className="space-y-3 rounded-xl border p-4">
-  <h3 className="text-xl font-semibold">الأقسام الحالية</h3>
+  <h3 className="text-xl font-semibold text-black">الأقسام الحالية</h3>
 
   {modules.length === 0 && (
     <p className="text-gray-500">
@@ -453,7 +453,7 @@ export default function CurriculumManager({
 </div>
 
       <form onSubmit={addLesson} className="space-y-4 rounded-xl border p-4">
-        <h3 className="text-xl font-semibold">إضافة درس Lesson</h3>
+        <h3 className="text-xl font-semibold text-black">إضافة درس Lesson</h3>
 
         <select
           value={selectedModuleId}
@@ -520,7 +520,7 @@ export default function CurriculumManager({
       </form>
 
       <div className="space-y-3 rounded-xl border p-4">
-        <h3 className="text-xl font-semibold">الدروس الحالية</h3>
+        <h3 className="text-xl font-semibold text-black">الدروس الحالية</h3>
 
         {!selectedModuleId && (
           <p className="text-gray-500">اختر قسمًا لعرض الدروس.</p>
